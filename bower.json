@@ -7,9 +7,9 @@
         "url": "http://github.com/kissyteam/event-custom.git"
     },
     "dependencies": {
-        "modulex": "modulex#master",
-        "event-base": "modulex-event-base#master",
-        "util": "modulex-util#master"
+        "modulex": "*",
+        "event-base": "modulex-event-base#1.x",
+        "util": "modulex-util#1.x"
     },
     "ignore": [
         "**/*",
