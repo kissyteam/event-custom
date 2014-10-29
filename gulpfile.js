@@ -67,6 +67,11 @@ gulp.task('build', ['lint'], function () {
         .pipe(gulp.dest(path.resolve(build)));
 });
 
+gulp.task('mx', function () {
+    var aggregateBower = require('aggregate-bower');
+    aggregateBower('bower_components/', 'mx_modules/');
+});
+
 gulp.task('tag', function (done) {
     var cp = require('child_process');
     var version = packageInfo.version;

@@ -16,11 +16,10 @@
 <h1 style="text-align: center">event-custom tests</h1>
 
 <div id='mocha'></div>
-<script src="/bower_components/modulex/build/modulex-debug.js"></script>
-<script src="/bower_components/event-base/build/event-base-debug.js"></script>
-<script src="/bower_components/event-base/meta/alias.js"></script>
-<script src="/bower_components/util/build/util-debug.js"></script>
-<script src="/bower_components/util/meta/alias.js"></script>
+<script src="/mx_modules/modulex-debug.js"></script>
+<script src="/mx_modules/ua-debug.js"></script>
+<script src="/mx_modules/feature-debug.js"></script>
+<script src="/mx_modules/meta.js"></script>
 <script src="/meta/alias.js"></script>
 
 <script src="/bower_components/async/lib/async.js"></script>
@@ -58,6 +57,7 @@
 <script>
     (function () {
         modulex.config({
+            base:'/mx_modules',
             packages: {
                 specs: {
                     base: '/tests/browser/specs'
