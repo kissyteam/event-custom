@@ -1,8 +1,4 @@
-/*
-Copyright 2014, modulex-event-custom@1.0.1
-MIT Licensed
-build time: Thu, 16 Oct 2014 04:33:51 GMT
-*/
+//! Copyright 2015, kissy-event-custom@1.0.2 MIT Licensed, build time: Thu, 05 Feb 2015 06:07:25 GMT 
 modulex.add("event-custom", ["modulex-event-base","modulex-util"], function(require, exports, module) {
 var modulexEventBase = require("modulex-event-base");
 var modulexUtil = require("modulex-util");
@@ -277,7 +273,7 @@ eventCustom = function (exports) {
   var Target = eventCustomTarget;
   var util = modulexUtil;
   exports = {
-    version: '1.0.1',
+    version: '1.0.2',
     Target: Target,
     Object: eventCustomObject,
     global: util.mix({}, Target)
