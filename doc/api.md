@@ -27,6 +27,8 @@ KISSY.use(['util', 'event-custom'], function(S, Util, CustomEvent) {
     c1.fire("run");
 });
 ```
+
+[添加冒泡事件源 demo](http://runjs.cn/code/bzppt8kc)
 ### removeTarget(target)
 
 - target {Object} 事件往上冒泡的事件源
@@ -46,9 +48,11 @@ KISSY.use(['util', 'event-custom'], function(S, Util, CustomEvent) {
 - cfg {Object} 事件的具体配置对象
   
   - [bubbles=true] {Boolean} 可选，是否支持冒泡，默认为true
-  - [defaultFn] {Function}
+  - [defaultFn] {Function}  默认动作函数，事件被触发时会默认执行，除非被事件对象通过preventDefault停止了
   
-配置自定义事件的一些特有信息
+注册一个自定义事件，并配置该事件的特性，如是否能冒泡，及事件发生的默认动作函数，类似a标签的默认跳转动作
+
+[创建自定义事件publish demo](http://runjs.cn/code/0h2ugbej)
 
 ### fire(eventType, eventData)
 
